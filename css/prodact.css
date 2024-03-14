@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+button {
+    border: none;
+}
+
+.navber {
+    width: 100%;
+}
+
+.nava {
+    box-shadow: 0px 0px 8px 0px rgba(51, 51, 51, 0.2);
+    background: rgb(255, 255, 255);
+}
+
+.nav__navbar {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding-left: 250px;
+}
+
+.navbar__menu {
+    box-sizing: border-box;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    padding: 5px;
+    background: #ffffff;
+    margin-left: 30px;
+}
+
+.nav__dropdown {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.contact__coll {
+    display: flex;
+    margin-left: -245px;
+    gap: 5px;
+}
+
+.contact__coll svg {
+    width: 20px;
+    margin-top: 5px;
+    padding: 1px;
+}
+
+.coll__number {
+    color: rgb(0, 0, 0);
+    font-family: Segoe UI;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 0.48px;
+}
+
+.second__header {
+    display: flex;
+    gap: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.nav__input {
+    width: 100%;
+    max-width: 600px;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.serch__btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(245, 62, 50);
+}
+
+.search {
+    border-radius: 5px;
+    border: 1px solid rgb(100, 180, 150);
+    width: 400px;
+    height: 45px;
+    padding-left: 20px;
+}
+
+.price__sort {
+    display: flex;
+    width: 130px;
+    height: 45px;
+    color: rgb(33, 37, 41);
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.abot {
+    display: flex;
+    gap: 8px;
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.abot__a {
+    display: flex;
+    max-width: 130px;
+    height: 39px;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.abot__a svg {
+    width: 14px;
+    height: 18px;
+}
+
+.abot__a h4 {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.48px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.prodact-card {
+    display: flex;
+    gap: 50px;
+}
+
+.podact-image {
+    width: 100%;
+    max-width: 459px;
+    height: 459px;
+    margin-top: 50px;
+}
+
+.hero__right {
+    width: 495px;
+    height: 592px;
+    margin-top: 88px;
+    margin-left: 50px;
+}
+
+.right__top {
+    width: 471px;
+    height: 118px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.right__top h3 {
+    color: rgb(43, 43, 45);
+    font-family: Segoe UI;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.right__top p {
+    color: rgb(122, 122, 122);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.5px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.star {
+    display: flex;
+}
+
+.star p {
+    margin-top: 5px;
+    color: rgb(122, 122, 122);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.25px;
+    letter-spacing: 0.48px;
+}
+
+
+.rating {
+    display: flex;
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+}
+
+.rating input {
+    appearance: unset;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+    from {
+        stroke-dashoffset: 24;
+    }
+}
+
+.rating label:hover svg {
+    stroke: var(--fill);
+}
+
+.rating input:checked~label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+}
+
+@keyframes yippee {
+    0% {
+        transform: scale(1);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30% {
+        transform: scale(0);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30.1% {
+        stroke: var(--fill);
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    60% {
+        transform: scale(1.2);
+        fill: var(--fill);
+    }
+}
+
+.title__combo h2 {
+    color: rgb(43, 43, 45);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.combo4 {
+    margin-left: 70px;
+    margin-top: -225px;
+}
+
+.titleh4 {
+    color: rgb(119, 119, 119);
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    margin-left: 40px;
+}
+
+.gost {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.gost__h2 {
+    color: rgb(245, 62, 50);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.01px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.gost__h3 {
+    color: rgb(122, 122, 122);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.48px;
+    margin-top: 3px;
+    text-decoration-line: line-through;
+}
+
+.kenzo {
+    display: flex;
+    gap: 20px;
+}
+
+.kenzo h4 {
+    color: rgb(43, 43, 45);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24.9px;
+    letter-spacing: 0.48px;
+    text-align: left;
+}
+
+.kenzo__btn {
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(119, 119, 119);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.48px;
+    transition: 0.5s ease-in-out;
+}
+
+.kenzo__btn:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(245, 62, 50);
+}
